@@ -1,0 +1,5 @@
+SUBSYSTEM=="video4linux", ATTR{index}=="0", ATTRS{interface}=="USB 2.0 Camera", SYMLINK+="onn_cam"
+SUBSYSTEM=="video4linux", ATTR{index}=="0", ATTRS{interface}=="ABWBCM1001 PC WebCam", SYMLINK+="amazon_cam_1"
+SUBSYSTEM=="video4linux", ATTR{index}=="0", ATTRS{interface}=="Trust Webcam", SYMLINK+="trust_cam"
+SUBSYSTEM=="video4linux", ATTR{index}=="0", ATTR{name}=="UVC Camera (046d:081b)", SYMLINK+="broken_cam"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="nano"
